@@ -34,7 +34,11 @@ class Announcement(Page):
 
 
 class About(Page):
-    comment = models.CharField()
+    comment = models.CharField(max_length=2000, default=" ")
+
+    def __str__(self):
+        return "About update comment: {}".format(self.comment)
+
     class Meta:
         verbose_name_plural = "about"
 
