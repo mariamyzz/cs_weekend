@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for session in past_sessions %}
+<div>
+<h2>Выходные #{{session.weekend_num}}</h2>
+
+    <p>Занятие #{{session.num}}</p>
+    <p>{{session.date}}</p>
+
+    <p>{{session.what_was_done}}</p>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}

@@ -34,16 +34,22 @@ class Announcement(Page):
 
 
 class About(Page):
-    pass
+    comment = models.CharField(max_length=2000, default=" ")
+
+    def __str__(self):
+        return "About update comment: {}".format(self.comment)
+
+    class Meta:
+        verbose_name_plural = "about"
 
 
 class Supplementary(Page):
-    pass
+
     class Meta:
-        verbose_name_plural = "supplementariesgit@github.com:Rustam86/cs_weekends.git"
+        verbose_name_plural = "supplementaries"
 
 
 class Compendia(Page):
-    pass
+
     class Meta:
         verbose_name_plural = "compendia"
