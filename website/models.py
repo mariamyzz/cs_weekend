@@ -34,16 +34,18 @@ class Announcement(Page):
 
 
 class About(Page):
-    pass
+
+    class Meta:
+        verbose_name_plural = "about"
 
 
 class Supplementary(Page):
-    pass
+
     class Meta:
-        verbose_name_plural = "supplementariesgit@github.com:Rustam86/cs_weekends.git"
+        verbose_name_plural = "supplementaries"
 
 
 class Compendia(Page):
-    pass
+
     class Meta:
         verbose_name_plural = "compendia"
