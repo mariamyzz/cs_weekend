@@ -34,7 +34,7 @@ class Announcement(Page):
 
 
 class About(Page):
-
+    comment = models.CharField()
     class Meta:
         verbose_name_plural = "about"
 
