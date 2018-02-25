@@ -18,27 +18,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <div class="container">
-
-        <h1>CS по выходным</h1>
-
-        <nav class="navbar">
-        <p>Каждые сб и вс в 15:00</p>
-
-        <ul>
-        <!-- the menu items will go here -->
-        </ul>
-
-        <p>
-            <a href="https://t.me/joinchat/BX_C9wxMGVCfS2X6ycFeuA" target="_blank">Группа в Telegram</a>
-        </p>
-    </nav>
-
-
-        <div>
-            Here will go some text.
-        </div>
+        {% block content %}
+        {% endblock %}
     </div>
+    <div class="sidebar">
+        {% block sidebar %}
 
+        {% endblock %}
+    </div>
 
 </body>
 </html>
